@@ -123,7 +123,7 @@ section .title::after{
     color: rgb(255, 255, 255);
 }
 .navbar.sticky .menu li a:hover{
-    color: rgb(9, 145, 61);
+    color: rgb(0, 0, 0);
 }
 
 /* menu btn styling */
