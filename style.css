@@ -380,50 +380,48 @@ section .title::after{
 
 /* Experience section styling */
 
-.Experience, .teams{
-    color:#fff;
-    background: #111;
+/* Add this CSS to your existing stylesheet or create a new one */
+
+.serv-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.Experience .title::before,
-.teams .title::before{
-    background: #fff;
+
+.card {
+  width: 45%; /* Adjust the width as needed */
+  margin: 10px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.Expertise .title::after,
-.teams .title::after{
-    background: #111;
-    content: "what i know";
+
+.box {
+  text-align: center;
 }
-.Experience .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+
+/* Styles for icon, text, and paragraphs (adjust as needed) */
+
+/* Example icon style */
+.box i {
+  font-size: 40px;
+  color: #333;
 }
-.Experience .serv-content .card:hover{
-    background: rgb(9, 145, 61);
+
+/* Example text style */
+.box .text {
+  font-size: 24px;
+  margin: 10px 0;
 }
-.Experience .serv-content .card .box{
-    transition: all 0.3s ease;
+
+/* Example paragraph style */
+.box p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
 }
-.Experience .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.Expertise .serv-content .card i{
-    font-size: 50px;
-    color: rgb(9, 145, 61);
-    transition: color 0.3s ease;
-}
-.Experience .serv-content .card:hover i{
-    color: #fff;
-}
-.Experience .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
+
 
 
 /*.Not Used Experience .title::after{
