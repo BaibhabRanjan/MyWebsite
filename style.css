@@ -380,20 +380,20 @@ section .title::after{
 }
 
 /* Experience section styling */
-.Expertise, .teams{
+.Experience, .teams{
     color:#fff;
     background: #111;
 }
-.Expertise .title::before,
+.Experience .title::before,
 .teams .title::before{
     background: #fff;
 }
-.Expertise .title::after,
+.Experience .title::after,
 .teams .title::after{
     background: #111;
     content: "For whoom I have worked";
 }
-.Expertise .serv-content .card{
+.Experience .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -402,24 +402,24 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.Expertise .serv-content .card:hover{
+.Experience .serv-content .card:hover{
     background: rgb(9, 145, 61);
 }
-.Expertise .serv-content .card .box{
+.Experience .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.Expertise .serv-content .card:hover .box{
+.Experience .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.Expertise .serv-content .card i{
+.Experience .serv-content .card i{
     font-size: 50px;
     color: rgb(9, 145, 61);
     transition: color 0.3s ease;
 }
-.Expertise .serv-content .card:hover i{
+.Experience .serv-content .card:hover i{
     color: #fff;
 }
-.Expertise .serv-content .card .text{
+.Experience .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
