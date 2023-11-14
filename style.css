@@ -424,21 +424,6 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* CSS to remove space between cards */
-.serv-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.card {
-  flex: 0 0 calc(50% - 10px); /* Two items in a row with no space */
-  margin-bottom: 20px; /* Adjust as needed */
-}
-
-.card:last-child {
-  margin-right: 0; /* Remove margin from the last card to prevent overflow */
-}
-
 
 
 /*.Not Used Experience .title::after{
