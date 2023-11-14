@@ -379,58 +379,50 @@ section .title::after{
 }
 
 /* Experience section styling */
-/* Updated CSS styles for the experience section with colors and hover effects */
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
+.Expertise, .teams{
+    color:#fff;
+    background: #111;
 }
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+.Expertise .title::before,
+.teams .title::before{
+    background: #fff;
 }
-
-.section-title {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #333;
+.Expertise .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i know";
 }
-
-.experience {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.Expertise .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-
-.experience-item {
-  width: calc(50% - 20px); /* Two items in a row with some margin space */
-  margin-bottom: 40px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+.Expertise .serv-content .card:hover{
+    background: rgb(9, 145, 61);
 }
-
-.experience-item:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+.Expertise .serv-content .card .box{
+    transition: all 0.3s ease;
 }
-
-.experience-details h3 {
-  margin-top: 0;
-  color: #333;
+.Expertise .serv-content .card:hover .box{
+    transform: scale(1.05);
 }
-
-.role {
-  font-style: italic;
-  margin-bottom: 5px;
-  color: #777;
+.Expertise .serv-content .card i{
+    font-size: 50px;
+    color: rgb(9, 145, 61);
+    transition: color 0.3s ease;
 }
-
+.Expertise .serv-content .card:hover i{
+    color: #fff;
+}
+.Expertise .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
 
 
 /*.Not Used Experience .title::after{
