@@ -380,50 +380,79 @@ section .title::after{
 }
 
 /* Experience section styling */
-.Experience, .teams{
-    color:#fff;
+/* Common styles for Experience and teams */
+.Experience,
+.teams {
+    color: #fff;
     background: #111;
 }
+
 .Experience .title::before,
-.teams .title::before{
+.teams .title::before {
     background: #fff;
 }
+
 .Experience .title::after,
-.teams .title::after{
+.teams .title::after {
     background: #111;
-    content: "For whoom I have worked";
+    content: "For whom I have worked";
 }
-.Experience .serv-content .card{
-    width: calc(33% - 20px);
+
+/* Styles for card layout */
+.Experience .serv-content .card {
+    width: calc(100% - 20px); /* Full width on smaller screens */
+    max-width: 400px; /* Limit maximum width */
+    margin: 0 auto; /* Center align on larger screens */
     background: #222;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 20px; /* Add some spacing between cards */
 }
-.Experience .serv-content .card:hover{
+
+/* Hover effect */
+.Experience .serv-content .card:hover {
     background: rgb(9, 145, 61);
 }
-.Experience .serv-content .card .box{
+
+/* Scale effect */
+.Experience .serv-content .card .box {
     transition: all 0.3s ease;
 }
-.Experience .serv-content .card:hover .box{
+
+.Experience .serv-content .card:hover .box {
     transform: scale(1.05);
 }
-.Experience .serv-content .card i{
-    font-size: 50px;
+
+/* Icon styles */
+.Experience .serv-content .card i {
+    font-size: 5vw; /* Relative font size */
     color: rgb(9, 145, 61);
     transition: color 0.3s ease;
 }
-.Experience .serv-content .card:hover i{
+
+.Experience .serv-content .card:hover i {
     color: #fff;
 }
-.Experience .serv-content .card .text{
-    font-size: 25px;
+
+/* Text styles */
+.Experience .serv-content .card .text {
+    font-size: 3vw; /* Relative font size */
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    /* Adjust card width for larger screens */
+    .Experience .serv-content .card {
+        width: calc(50% - 20px);
+        margin: 0 10px; /* Add space between cards */
+    }
+}
+
 /*.Not Used Experience .title::after{
     content: "who with me";
 }
