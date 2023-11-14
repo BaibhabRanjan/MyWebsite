@@ -379,12 +379,13 @@ section .title::after{
 }
 
 /* Experience section styling */
-/* Basic CSS styles for the experience section */
+/* Updated CSS styles for the experience section with colors and hover effects */
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
 }
 
 .container {
@@ -396,6 +397,7 @@ body {
 .section-title {
   text-align: center;
   margin-bottom: 30px;
+  color: #333;
 }
 
 .experience {
@@ -408,18 +410,25 @@ body {
   width: calc(50% - 20px); /* Two items in a row with some margin space */
   margin-bottom: 40px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 .experience-details h3 {
   margin-top: 0;
+  color: #333;
 }
 
 .role {
   font-style: italic;
   margin-bottom: 5px;
+  color: #777;
 }
 
 
