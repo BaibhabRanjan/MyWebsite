@@ -381,6 +381,77 @@ section .title::after{
 
 /* Experience section styling */
 .Experience, .teams{
+    color: #fff;
+    background: #111;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.Experience .title::before,
+.teams .title::before{
+    background: #fff;
+}
+
+.Experience .title::after,
+.teams .title::after{
+    background: #111;
+    content: "Where I have worked";
+}
+
+/* Adjust card layout for responsiveness */
+@media only screen and (max-width: 768px) {
+    .Experience .serv-content .card{
+        width: calc(50% - 20px); /* Make the cards 50% width on smaller screens */
+        margin-bottom: 20px; /* Add margin between cards */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .Experience .serv-content .card{
+        width: calc(100% - 20px); /* Make the cards full width on even smaller screens */
+    }
+}
+
+.Experience .serv-content .card{
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Experience .serv-content .card:hover{
+    background: rgb(9, 145, 61);
+}
+
+.Experience .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+
+.Experience .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.Experience .serv-content .card i{
+    font-size: 50px;
+    color: rgb(9, 145, 61);
+    transition: color 0.3s ease;
+}
+
+.Experience .serv-content .card:hover i{
+    color: #fff;
+}
+
+.Experience .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+
+/* Experience section styling no responsive */
+/*.Experience, .teams{
     color:#fff;
     background: #111;
 }
@@ -425,67 +496,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/*.Not Used Experience .title::after{
-    content: "who with me";
-}
-.Experience .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.Experience .carousel .card:hover{
-    background: rgb(9, 145, 61);
-}
-.Experience .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.Experience .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.Experience .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.Experience .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid rgb(9, 145, 61);
-    transition: all 0.3s ease;
-}
-.Experience .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid rgb(9, 145, 61)!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: rgb(9, 145, 61)!important;
-}
+
 
 /* contact section styling */
 .contact .title::after{
